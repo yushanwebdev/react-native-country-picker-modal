@@ -1,15 +1,68 @@
 # React Native Country Picker 🗺️
 
-A country picker component for React Native. This is a fork of [xcarpentier/react-native-country-picker-modal](https://github.com/xcarpentier/react-native-country-picker-modal) with some improvements. This is following an approach similar to [shadcn/ui](https://github.com/shadcn-ui/ui) approach to give you the power to customise the component as you want. It will live with the components that created by you. So no more need to wait for the maintainer to accept your PR or patch the node modules.
+A highly customizable country picker component for React Native. Built for flexibility, this allows you to easily integrate it into your project and tailor its appearance and functionality to match your application's unique design.
 
-## Installation
+## Inspired by 🌟
+[xcarpentier/react-native-country-picker-modal](https://github.com/xcarpentier/react-native-country-picker-modal) 
+
+
+## Key Features 💡
+
+Other than the features that provided by the original package, this package has some additional features as well.
+- **Highly Customizable**: Customize the appearance and functionality of the country picker to match your application's unique design.
+* **Simple Integration:** Start using the country picker within minutes.
+
+## Installation 🚀
+
+1. Install Dependencies:
 
 ```bash
 $ npm install @callstack/react-theme-provider fuse.js react-async-hook
 ```
 
+2. Download and Extract Components:
+* Download the ZIP file from: https://github.com/yushanwebdev/react-native-country-picker-modal/releases/download/v3.0.0/CountryPickerModal.zip
+* Extract the contents of the ZIP file into your project's components directory.
+
+That's it! You're ready to start using the country picker. 🚀
+
+## Usage 🛠️
+
+Now you can start using it in anywhere of your project like this:
+
+```jsx
+import { CountryPicker } from '@/components/ui/CountryPickerModal/CountryPicker' // This path will be differ based on your project structure 
+
+export default function Example() {
+    const [regionCode, setRegionCode] = useState<CountryCode>('UK');
+
+    const onSelectCountry = (country: Country) => {
+        setRegionCode(country.cca2);
+    };
+
+    return (
+        <CountryPicker
+          onSelect={onSelectCountry}
+          countryCode={regionCode}
+          withEmoji
+          withFilter
+        />
+    )
+}
+```
+
+**Now that the component resides within your project, you have full freedom to customize it however you like. No more waiting on maintainers for PR approvals or patching node_modules 🤩**
+
+## Future Plans 🔮
+
+* **Automated Installation:** Development of a CLI tool to streamline the installation process.
+* **Enhanced Performance:** Migration of animations from React Native's Animated API to Reanimated 3 for smoother and more efficient rendering.
 
 
-## Credits
+## Credits 🙏
 
-[Xavier Carpentier](https://github.com/xcarpentier)
+* [Xavier Carpentier](https://github.com/xcarpentier)
+* [shadcn/ui](https://github.com/shadcn-ui/ui)
+
+
+
