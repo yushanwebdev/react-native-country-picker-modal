@@ -62,7 +62,7 @@ export default function Example() {
 
 ## Credits 🙏
 
-* [Xavier Carpentier](https://github.com/xcarpentier)
+* [Xavier Carpentier's React Native Country Picker Modal](https://github.com/xcarpentier/react-native-country-picker-modal)
 * [shadcn/ui](https://github.com/shadcn-ui/ui)
 
 
