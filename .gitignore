@@ -1,0 +1,32 @@
+# Logs, dependency directories, and build artifacts
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules
+dist
+build
+
+# Editor/IDE preferences
+.vscode/*
+!.vscode/extensions.json 
+.idea
+.DS_Store
+
+# Operating system-specific files
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Testing coverage
+coverage
+
+# dotenv environment variables (if using)
+.env 
+.env.local
+
+# Optional: lock files 
+yarn.lock
+package-lock.json
