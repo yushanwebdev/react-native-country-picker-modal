@@ -3,7 +3,8 @@
 A highly customizable country picker component for React Native. Built for flexibility, this allows you to easily integrate it into your project and tailor its appearance and functionality to match your application's unique design.
 
 ## Inspired by 🌟
-[xcarpentier/react-native-country-picker-modal](https://github.com/xcarpentier/react-native-country-picker-modal) 
+
+This project is a fork of the amazing [xcarpentier/react-native-country-picker-modal](https://github.com/xcarpentier/react-native-country-picker-modal), which has been inactive for long time. I have taken the initiative to maintain and enhance the package to ensure that it remains up-to-date and compatible with the latest versions of React Native & other dependencies.
 
 
 ## Key Features 💡
